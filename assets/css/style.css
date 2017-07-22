@@ -1,10 +1,68 @@
+/*
+//	BASIC STYLES
+*/
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+body > section {
+    min-height: 50vh;
+    padding: 10em 0 8em;
+}
+h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+h3 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+h4 {
+    font-family: 'Droid Serif', Times, serif;
+    font-style: italic;
+    color: #777;
+	margin-bottom: 5em;
+}
+h5 {
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+a {
+	color: #FED136;
+}
+a:hover, a:focus, a:active {
+	color: #FEB836;
 }
 a, a:hover, a:focus, a:active,
 .btn, .btn:hover, .btn:focus, .btn:active {
 	transition: .5s all ease;
 }
+.btn-primary {
+    color: #fff;
+    background-color: #FED136;
+    border-color: #FED136;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 1em 2em;
+    margin: 3em 0 0;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:focus {
+	color: #fff;
+    background-color: #FEB836;
+    border-color: #FEB836;	
+}
+.icon-circle {
+    border-radius: 50%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+/*
+//	NAVBAR
+*/
 .navbar {
 	position: absolute;
 	top: 0;
@@ -33,6 +91,10 @@ a, a:hover, a:focus, a:active,
 .navbar-default .navbar-nav>li>a:hover {
 	color: #FED136;
 }
+
+/*
+//	HEADER
+*/
 header {
 	background-image: url("../img/header-bg.jpg");
 	background-size: cover;
@@ -59,20 +121,195 @@ header .box h1 {
 	font-weight: 800;
     font-size: 7rem;
 }
-.btn-primary {
-    color: #fff;
+
+/*
+//	SERVICES
+*/
+.icon-circle.golden {
     background-color: #FED136;
-    border-color: #FED136;
+    height: 100px;
+    width: 100px;
+    font-size: 60px;
+    line-height: 100px;
+}
+#services p {
+	color: #777;
+	font-family: 'Droid Serif', Times, serif;
+    line-height: 170%;
+    margin-bottom: 25px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/*
+//	PORTFOLIO
+*/
+#portfolio, #team {
+	background-color: #EEEEEE;
+}
+#portfolio .project-box,
+#team .team-box {
+    max-width: 400px;
+    cursor: pointer;
+    overflow: hidden;
+    padding-bottom: 1em;
+    margin-bottom: 3em;
+}
+#portfolio .project-box:hover .image,
+#portfolio .project-box:hover .text {
+    box-shadow: 0px 3px 5px rgba(0,0,0,.3);
+    transition: .5s all ease;
+}
+#portfolio .project-box .image {
+	overflow: hidden;
+	transition: .5s all ease;
+}
+#portfolio .project-box .image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#portfolio .project-box .text {
+    background-color: #fff;
+    margin: 0;
+    float: left;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    transition: .5s all ease;
+}
+#portfolio .project-box .text p{
+	font-family: 'Droid Serif', Times, serif;
+    font-style: italic;
+    color: #777;
+    font-size: 1.5rem;
+}
+
+/*
+//	ABOUT
+*/
+#about .box {
+    width: 42.5%;
+    padding: 1em 2em;
+    display: block;
+    margin-bottom: 5em;
+}
+#about .box.left {
+	text-align: right;
+    float: left;
+}
+#about .box.right {
+	text-align: left;
+    float: right;
+}
+#about .image {
+	margin: 0 auto;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 15%;
+    max-width: 200px;
+	border: 7px solid #F1F1F1;
+	border-radius: 50%;
+}
+#about .image img {
+	width: 100%;
+    height: auto;
+    display: block;
+}
+.icon-circle.golden.big {
+    height: 160px;
+    width: 160px;
+    font-size: 200%;
+    line-height: 25px;
+    border: 7px solid #F1F1F1;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/*
+//	TEAM
+*/
+#team h5 {
+	margin-bottom: 5px;
+}
+#team p {
+	font-family: 'Droid Serif', Times, serif;
+	color: #777;
+}
+#team .team-box .image {
+	margin-bottom: 2em;
+}
+#team .team-box .image img {
+    border: 7px solid #fff;
+}
+.icon-circle.black {
+    background-color: #333;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    display: inline-block;
+}
+.icon-circle.black:hover,
+.icon-circle.black:focus,
+.icon-circle.black:active,
+.icon-circle.black:active:focus {
+	color: #FED136;
+}
+.icon-circle.black + .icon-circle.black {
+    margin-left: 10px;
+}
+
+/*
+//	BRANDS
+*/
+#brands {
+	min-height: initial;
+}
+#brands img {
+    margin: 0 auto 2em;
+}
+
+/*
+//	CONTACT
+*/
+#contact {
+	background-color: #222222;
+	background-image: url("../img/map-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+#contact input,
+#contact textarea {
+	padding: 1em;
+    height: initial;
     text-transform: uppercase;
     font-weight: 800;
-    padding: 1em 2em;
-    margin: 3em 0 0;
+    font-size: 1.5rem;
+    color: #999;
 }
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary:active:focus {
-	color: #fff;
-    background-color: #FEB836;
-    border-color: #FEB836;	
+#contact textarea {
+	min-height: 190px;
+}
+
+/*
+//	FOOTER
+*/
+footer {
+    padding: 2em 0;
+}
+footer .container .row > * {
+    padding-bottom: 1em;
+}
+footer a {
+	display: inline-block;
+	margin: 0 1em;
 }

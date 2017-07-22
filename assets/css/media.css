@@ -1,0 +1,68 @@
+@media screen and (max-width: 767px) {
+	/* NAVBAR */
+	.navbar {
+		padding: 0;
+		background: #222222;
+	}
+	.navbar-default .navbar-toggle {
+	    border: none;
+	    background: #FED136;
+	    color: #fff;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.navbar span.menu {
+	    float: left;
+	    margin-right: 7px;
+	    text-transform: uppercase;
+	}
+	.navbar .icon-menu {
+	    float: right;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+	    background: #fff;
+	    width: 15px;
+	}
+	.navbar-toggle .icon-bar+.icon-bar {
+	    margin-top: 3px;
+	}
+	
+	/* HEADER */
+	header .box h3 {
+		font-size: 3rem;
+	}
+	header .box h1 {
+		font-size: 5rem;
+	}
+
+	/* PORTFOLIO */
+	#portfolio .project-box, 
+	#team .team-box {
+	    margin: 0 auto 2em;
+	    float: none;
+	}
+
+	/* ABOUT */
+	#about .image {
+	    margin: 1em;
+	}
+	#about .box{
+	    margin-left: 15%;
+   		width: 85%;
+   		margin-bottom: 0;
+	}
+	#about .box.left {
+		text-align: left;
+    	float: left;
+	}
+	.icon-circle.golden.big {
+		margin: initial;
+	    height: 110px;
+	    width: 110px;
+	    font-size: 140%;
+	    line-height: 20px;
+	    padding: 10px;
+	}
+
+}
